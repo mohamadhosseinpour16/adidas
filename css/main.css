@@ -91,3 +91,18 @@ nav > a:hover {
   outline: none;
   border: none;
 }
+.center-word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 4rem 0;
+  text-transform: uppercase;
+}
+.center-word > h1{
+  border-bottom: 2px solid var(--color-black);
+  padding: 0 6rem;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
