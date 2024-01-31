@@ -3,7 +3,8 @@
   --color-header: rgb(217, 217, 217);
   --color-black: rgb(0, 0, 0);
   --color-white: rgb(255, 255, 255);
-  --bg-footer: rgb(34, 34, 34);
+  --bg-subfooter: rgb(34, 34, 34);
+  --bg-button-footer: rgb(63, 63, 63);
 }
 body {
   background-color: var(--color-white);
@@ -20,6 +21,9 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0.3rem 5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 header > figure {
   margin: 0;
@@ -52,7 +56,6 @@ nav > a:hover {
   transform: scale(1.2);
   transition: 0.5s;
 }
-
 .subheader {
   width: 100%;
   margin: 0;
@@ -155,4 +158,58 @@ aside {
 }
 .slide-women {
   background: url("./Backgroundimages/woman-slide.webp");
+}
+footer {
+  background-color: var(--color-black);
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-bet;
+  width: 100%;
+  color: var(--color-white);
+  padding-right: 4rem;
+}
+.footer-content {
+  width: 25%;
+}
+.column-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 25%;
+}
+.column-footer > a {
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+.column-footer > a:hover {
+  text-decoration: underline;
+}
+.footer-content > img {
+  width: 100%;
+  opacity: 0.5;
+}
+.footer-content > button {
+  background-color: var(--bg-button-footer);
+  color: var(--color-white);
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  padding: 1rem 1rem;
+  border-radius: 0 2rem 2rem 0;
+  cursor: pointer;
+}
+#subfooter{
+  background-color: var(--bg-subfooter);
+  color: var(--color-white);
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
 }
